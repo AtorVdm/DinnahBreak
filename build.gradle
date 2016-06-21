@@ -1,0 +1,16 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+dependencies {
+    compile files('lib/aspose-cells-8.8.2.jar', 'lib/commons-logging-1.2.jar')
+    compile 'org.jsoup:jsoup:1.9.2'
+    compile 'net.sourceforge.htmlunit:htmlunit:2.22'
+}
+
+sourceSets.main.java.srcDirs 'src/main'
+
+mainClassName = "com.dinnahs.DinnahMain"
